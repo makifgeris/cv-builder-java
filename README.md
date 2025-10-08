@@ -12,14 +12,13 @@ Kullanıcı bilgileri, iş deneyimleri, eğitim geçmişi ve yetenekler PDF dosy
 - Yetenekler bölümü  
 - Fotoğraf ekleme desteği (isteğe bağlı)  
 
-##  Proje Dosyaları
-.
-├── ResumeGenerator.java # Ana Java kaynağı
-├── ResumeGenerator.class # Derlenmiş sınıf
-├── itextpdf-5.5.13.3.jar # iText PDF kütüphanesi
-├── DejaVuSans.ttf # Türkçe karakter desteği için font
-├── photo.jpg # Profil fotoğrafı (opsiyonel)
-└── ozgecmis.pdf # Üretilen çıktı
+<pre> ##  Proje Dosyaları   
+   ├── ResumeGenerator.java # Ana Java kaynağı 
+   ├── ResumeGenerator.class # Derlenmiş sınıf 
+   ├── itextpdf-5.5.13.3.jar # iText PDF kütüphanesi 
+   ├── DejaVuSans.ttf # Türkçe karakter desteği için font 
+   ├── photo.jpg # Profil fotoğrafı (opsiyonel) 
+   └── ozgecmis.pdf # Üretilen çıktı  </pre>
 
 
 ##  Çalıştırma

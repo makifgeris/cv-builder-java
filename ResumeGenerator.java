@@ -20,9 +20,8 @@ public class ResumeGenerator {
 
             document.open();
 
-
             // Türkçe karakterler için Unicode font ayarı
-           String fontPath = "DejaVuSans.ttf";
+            String fontPath = "DejaVuSans.ttf";
             BaseFont bf = BaseFont.createFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
 
             // Başlık + fotoğraf
@@ -113,7 +112,25 @@ public class ResumeGenerator {
                 "Siber Güvenlik Kulübü",
                 "Eylül 2024 - Haziran 2025",
                 "\u2022 Java ve Spring Boot ile kurumsal uygulamalar geliştirme\n" +
-                "\u2022 Takım liderliği ve kod inceleme süreçleri"
+                        "\u2022 Takım liderliği ve kod inceleme süreçleri"
+        );
+
+        addJobExperience(document,
+                bf,
+                "Backend Developer Stajyeri",
+                "TechNova Yazılım",
+                "Temmuz 2024 - Eylül 2024",
+                "\u2022 RESTful API geliştirme ve MySQL veritabanı entegrasyonu\n" +
+                        "\u2022 Spring Framework ve Hibernate kullanımı"
+        );
+
+        addJobExperience(document,
+                bf,
+                "Freelance Web Geliştirici",
+                "Serbest Çalışma",
+                "2023 - Devam ediyor",
+                "\u2022 HTML, CSS, JavaScript ve React ile web arayüzleri tasarımı\n" +
+                        "\u2022 Müşteri taleplerine özel web sitesi çözümleri geliştirme"
         );
     }
 
@@ -173,6 +190,8 @@ public class ResumeGenerator {
         document.add(skill1);
 
         document.add(new Paragraph("\u2022 Problem çözme ve analitik düşünme yeteneği", skillFont));
+        document.add(new Paragraph("\u2022 Java, Spring Boot, HTML, CSS, JavaScript bilgisi", skillFont));
+        document.add(new Paragraph("\u2022 MySQL ve Git/GitHub kullanımı", skillFont));
     }
 
     /**

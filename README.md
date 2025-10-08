@@ -16,19 +16,17 @@ Kullanıcı bilgileri, iş deneyimleri, eğitim geçmişi ve yetenekler PDF dosy
    ├── ResumeGenerator.java # Ana Java kaynağı 
    ├── ResumeGenerator.class # Derlenmiş sınıf 
    ├── itextpdf-5.5.13.3.jar # iText PDF kütüphanesi 
-   ├── DejaVuSans.ttf # Türkçe karakter desteği için font 
+   ├── DejaVuSans.ttf # Türkçe karakter desteği için font
+   ├── calistir.bat # Programı kolayca çalıştırmak için betik dosyası
    ├── photo.jpg # Profil fotoğrafı (opsiyonel) 
    └── ozgecmis.pdf # Üretilen çıktı  </pre>
 
+##  Çalıştırma Adımları
 
-##  Çalıştırma
-1. Bilgisayarınızda **Java JDK** kurulu olduğundan emin olun.  
-2. Projeyi derleyin:  
-   ```bash
-   javac -cp itextpdf-5.5.13.3.jar ResumeGenerator.java
-3. Projeyi çalıştırın:
-   java -cp .;itextpdf-5.5.13.3.jar ResumeGenerator
-5. Çalıştırma tamamlandığında bulunduğunuz dizine ozgecmis.pdf adlı dosya oluşturulur.
+1. Bilgisayarınızda **Java JDK 8+** kurulu olduğundan emin olun.
+2. iText PDF kütüphanesi (örnek: itextpdf-5.5.13.3.jar) proje dosyalarıyla aynı dosyada olduğundan emin olun. 
+3. Proje dosyalarını aynı klasöre yerleştirin.  
+4. Programı çalıştırmanın iki yolu vardır:
 
 ##  Fotoğraf Ekleme
 
@@ -38,9 +36,17 @@ Eğer bulunmazsa, [Fotoğraf bulunamadı] notu eklenir.
 
 Kendi fotoğrafınızı eklemek için aynı klasöre photo.jpg koyabilirsiniz.
 
-🛠 Gereksinimler
 
-Java JDK 8+
+##  Çalıştırma: `calistir.bat` Dosyası ile (Windows)
+Klasördeki `calistir.bat` dosyasına çift tıklayın.
 
-iText PDF kütüphanesi (örnek: itextpdf-5.5.13.3.jar)
+## Alternatif Çalıştırma
+1. Bilgisayarınızda **Java JDK** kurulu olduğundan emin olun.  
+2. Projeyi derleyin:  
+   ```bash
+   javac -cp itextpdf-5.5.13.3.jar ResumeGenerator.java
+3. Projeyi çalıştırın:
+   ```bash
+   java -cp .;itextpdf-5.5.13.3.jar ResumeGenerator
+ Çalıştırma tamamlandığında bulunduğunuz dizine ozgecmis.pdf adlı dosya oluşturulur.
 

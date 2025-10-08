@@ -24,9 +24,10 @@ Kullanıcı bilgileri, iş deneyimleri, eğitim geçmişi ve yetenekler PDF dosy
 ##  Çalıştırma Adımları
 
 1. Bilgisayarınızda **Java JDK 8+** kurulu olduğundan emin olun.
-2. iText PDF kütüphanesi (örnek: itextpdf-5.5.13.3.jar) proje dosyalarıyla aynı dosyada olduğundan emin olun. 
-3. Proje dosyalarını aynı klasöre yerleştirin.  
-4. Programı çalıştırmanın iki yolu vardır:
+2. iText PDF kütüphanesi (örnek: itextpdf-5.5.13.3.jar) proje dosyalarıyla aynı dosyada olduğundan emin olun.
+3. (Opsiyonel) DejaVuSans.ttf — Türkçe karakterlerin doğru görünmesi için gereklidir. 
+4. Proje dosyalarını aynı klasöre yerleştirin.  
+5. Programı çalıştırmanın iki yolu vardır:
 
 ##  Fotoğraf Ekleme
 
